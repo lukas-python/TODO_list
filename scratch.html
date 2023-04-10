@@ -25,14 +25,29 @@
 
     </div>
     <hr>
-    <div>
+    <div class="add-task">
         <label for="text-input">Dodaj zadanie do listy</label><br>
         <textarea type="textarea" name="text-input" id="text-input" rows="3" cols="50"></textarea><br>
         <br>
-        <button type="button" class="btn btn-success">Dodaj zadanie</button>
     </div>
+    <div class="end-date">
+        <label for="date-input" id="label-for-date">Podaj datę zakończenia zadania</label><br>
+        <input type="date" id="date-input">
+    </div><br>
+    <div class="task-category-container">
+        <label for="task-category" id="task-category-label">Wybierz dziedzinę działania</label><br>
+        <select name="task-cat" id="task-category">
+            <option value="">--Wybierz dziedzinę--</option>
+            <option value="praca">Praca</option>
+            <option value="dom">Dom</option>
+            <option value="czas-wolny">Czas wolny</option>
+            <option value="sport">Sport</option>
+            <option value="inne">Inne</option>
+        </select>
+    </div><br>
+    <button type="button" class="btn btn-success">Dodaj zadanie</button>
 
-<!--    Dodaj termin zakonczenia zadania-->
+
 <!--    dodaj kategorie zadan-->
 
 
