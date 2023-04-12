@@ -13,7 +13,20 @@ function addingIssue (){
     else{
         let createPar = document.createElement("div");
         createPar.innerHTML = "<p>" + textArea.value+ "<br>"+ date.value+ "<br>" + taskCategory.value+"</p>";
-        divToDo.before(createPar);
+        divToDo.appendChild(createPar);
+        let createDeleteBtn = document.createElement("button");
+        createDeleteBtn.classList.add("btn-success");
+        createDeleteBtn.innerHTML = "Usuń";
+        divToDo.appendChild(createDeleteBtn);
+        clearInput();
+    }
+}
+
+function clearInput(){
+    if (textArea.value != "" && date.value != "" && taskCategory.value != ""){
+        textArea.value = "";
+        date.value = "";
+        taskCategory.value = "";
     }
 }
 
